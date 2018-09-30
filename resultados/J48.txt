@@ -1,0 +1,918 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.1 -M 2
+Relation:     modelo-weka.filters.unsupervised.attribute.Remove-R2-3,5-8,10-11,19-20,22-26,31-37,39,41-44,46-55,57,60,63-65,67-68,71,74
+Instances:    8282
+Attributes:   30
+              computer
+              gmt
+              server
+              science
+              home
+              lastmodified
+              contentlength
+              nov
+              university
+              research
+              department
+              course
+              office
+              email
+              student
+              tue
+              interest
+              classs
+              welcome
+              phd
+              associate
+              thu
+              fax
+              mimeversion
+              currently
+              phone
+              href
+              src
+              endereco
+              class
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+endereco <= 0
+|   associate <= 0
+|   |   nov <= 0
+|   |   |   tue <= 0
+|   |   |   |   mimeversion <= 0
+|   |   |   |   |   course <= 0
+|   |   |   |   |   |   student <= 0
+|   |   |   |   |   |   |   phd <= 0
+|   |   |   |   |   |   |   |   computer <= 0
+|   |   |   |   |   |   |   |   |   office <= 0: other (100.0/23.0)
+|   |   |   |   |   |   |   |   |   office > 0: course (5.0/2.0)
+|   |   |   |   |   |   |   |   computer > 0
+|   |   |   |   |   |   |   |   |   src <= 0
+|   |   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   |   href <= 3: project (19.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   href > 3: other (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   department > 0
+|   |   |   |   |   |   |   |   |   |   |   gmt <= 1: faculty (2.0)
+|   |   |   |   |   |   |   |   |   |   |   gmt > 1: other (3.0)
+|   |   |   |   |   |   |   |   |   src > 0
+|   |   |   |   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   |   |   |   email <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   science <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   src <= 2: faculty (17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   src > 2: other (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   science > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 4: other (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 4: project (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   classs > 0: faculty (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   email > 0: faculty (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   welcome > 0: project (4.0/1.0)
+|   |   |   |   |   |   |   phd > 0
+|   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   science <= 1: course (2.0/1.0)
+|   |   |   |   |   |   |   |   |   science > 1: faculty (7.0/1.0)
+|   |   |   |   |   |   |   |   department > 0: student (5.0/1.0)
+|   |   |   |   |   |   student > 0
+|   |   |   |   |   |   |   classs <= 1
+|   |   |   |   |   |   |   |   email <= 1
+|   |   |   |   |   |   |   |   |   thu <= 0
+|   |   |   |   |   |   |   |   |   |   office <= 1
+|   |   |   |   |   |   |   |   |   |   |   department <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   home <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   research <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   student <= 2: student (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   student > 2: other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   research > 2: project (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   home > 3: other (2.0)
+|   |   |   |   |   |   |   |   |   |   |   department > 1
+|   |   |   |   |   |   |   |   |   |   |   |   office <= 0: department (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   office > 0: student (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   office > 1: other (3.0/1.0)
+|   |   |   |   |   |   |   |   |   thu > 0: other (5.0/1.0)
+|   |   |   |   |   |   |   |   email > 1: faculty (2.0/1.0)
+|   |   |   |   |   |   |   classs > 1: course (2.0)
+|   |   |   |   |   course > 0
+|   |   |   |   |   |   phd <= 0
+|   |   |   |   |   |   |   department <= 3
+|   |   |   |   |   |   |   |   server <= 2
+|   |   |   |   |   |   |   |   |   research <= 3: course (56.0/13.0)
+|   |   |   |   |   |   |   |   |   research > 3: other (4.0/2.0)
+|   |   |   |   |   |   |   |   server > 2: department (3.0/2.0)
+|   |   |   |   |   |   |   department > 3: department (3.0)
+|   |   |   |   |   |   phd > 0
+|   |   |   |   |   |   |   department <= 1: faculty (6.0/1.0)
+|   |   |   |   |   |   |   department > 1: other (4.0)
+|   |   |   |   mimeversion > 0
+|   |   |   |   |   course <= 1
+|   |   |   |   |   |   department <= 1
+|   |   |   |   |   |   |   fax <= 0
+|   |   |   |   |   |   |   |   research <= 2
+|   |   |   |   |   |   |   |   |   home <= 0
+|   |   |   |   |   |   |   |   |   |   phd <= 0
+|   |   |   |   |   |   |   |   |   |   |   phone <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   gmt <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 0: other (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 0: course (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   gmt > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   email <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   office <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   science <= 1: other (21.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   science > 1: student (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   office > 0: course (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 0: course (39.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   welcome > 0: student (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href > 5: other (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 5: student (8.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   email > 0: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   science <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 0: project (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 0: student (10.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   science > 2: other (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   server > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   email <= 0: other (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   email > 0: department (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   currently > 0: student (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   phone > 0: student (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   phd > 0
+|   |   |   |   |   |   |   |   |   |   |   contentlength <= 0: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   contentlength > 0: faculty (10.0/3.0)
+|   |   |   |   |   |   |   |   |   home > 0: student (216.0/71.0)
+|   |   |   |   |   |   |   |   research > 2
+|   |   |   |   |   |   |   |   |   src <= 0: other (9.0/3.0)
+|   |   |   |   |   |   |   |   |   src > 0
+|   |   |   |   |   |   |   |   |   |   interest <= 0
+|   |   |   |   |   |   |   |   |   |   |   computer <= 2: project (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   computer > 2
+|   |   |   |   |   |   |   |   |   |   |   |   computer <= 4: student (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   computer > 4: faculty (2.0)
+|   |   |   |   |   |   |   |   |   |   interest > 0: faculty (8.0/2.0)
+|   |   |   |   |   |   |   fax > 0
+|   |   |   |   |   |   |   |   course <= 0
+|   |   |   |   |   |   |   |   |   contentlength <= 0
+|   |   |   |   |   |   |   |   |   |   research <= 0
+|   |   |   |   |   |   |   |   |   |   |   phd <= 0: other (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   phd > 0: student (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   research > 0: faculty (3.0)
+|   |   |   |   |   |   |   |   |   contentlength > 0
+|   |   |   |   |   |   |   |   |   |   phone <= 0
+|   |   |   |   |   |   |   |   |   |   |   src <= 8: student (19.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   src > 8: project (2.0)
+|   |   |   |   |   |   |   |   |   |   phone > 0
+|   |   |   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   phd <= 0: faculty (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   phd > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   science <= 1: student (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   science > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 0: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 0: faculty (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   server > 1: student (3.0)
+|   |   |   |   |   |   |   |   course > 0: faculty (9.0/1.0)
+|   |   |   |   |   |   department > 1
+|   |   |   |   |   |   |   department <= 4
+|   |   |   |   |   |   |   |   src <= 5
+|   |   |   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   |   phone <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   interest <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   phd <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   science <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 0: faculty (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 0: project (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   science > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   student <= 0: other (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   student > 0: student (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   phd > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university <= 6: faculty (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university > 6: other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   interest > 1: student (3.0)
+|   |   |   |   |   |   |   |   |   |   |   phone > 0: faculty (5.0)
+|   |   |   |   |   |   |   |   |   |   server > 1
+|   |   |   |   |   |   |   |   |   |   |   interest <= 0: other (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   interest > 0: student (2.0)
+|   |   |   |   |   |   |   |   |   welcome > 0
+|   |   |   |   |   |   |   |   |   |   research <= 3: department (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   research > 3: faculty (2.0/1.0)
+|   |   |   |   |   |   |   |   src > 5
+|   |   |   |   |   |   |   |   |   course <= 0
+|   |   |   |   |   |   |   |   |   |   server <= 1: student (6.0)
+|   |   |   |   |   |   |   |   |   |   server > 1: department (2.0)
+|   |   |   |   |   |   |   |   |   course > 0: department (3.0)
+|   |   |   |   |   |   |   department > 4: department (7.0/1.0)
+|   |   |   |   |   course > 1
+|   |   |   |   |   |   department <= 1
+|   |   |   |   |   |   |   src <= 0: course (12.0/1.0)
+|   |   |   |   |   |   |   src > 0
+|   |   |   |   |   |   |   |   computer <= 0: course (2.0)
+|   |   |   |   |   |   |   |   computer > 0: faculty (12.0/3.0)
+|   |   |   |   |   |   department > 1
+|   |   |   |   |   |   |   gmt <= 1: other (2.0)
+|   |   |   |   |   |   |   gmt > 1: department (4.0/1.0)
+|   |   |   tue > 0: other (407.0/52.0)
+|   |   nov > 0
+|   |   |   course <= 0
+|   |   |   |   tue <= 0
+|   |   |   |   |   thu <= 0
+|   |   |   |   |   |   mimeversion <= 0
+|   |   |   |   |   |   |   fax <= 0
+|   |   |   |   |   |   |   |   research <= 0
+|   |   |   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   |   |   science <= 2
+|   |   |   |   |   |   |   |   |   |   |   computer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   gmt <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   src <= 2: course (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   src > 2: department (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   gmt > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   office <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   email <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   contentlength <= 0: project (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   contentlength > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   university <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nov <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home <= 1: other (14.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home > 1: project (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   classs > 0: course (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nov > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 2: course (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 9: project (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 9: course (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   university > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href <= 4: faculty (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href > 4: course (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   server > 1: project (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   currently > 0: project (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   email > 0: faculty (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   office > 1: course (4.0)
+|   |   |   |   |   |   |   |   |   |   |   computer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   email <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   contentlength <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 4: course (18.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 4: faculty (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   contentlength > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   office <= 0: faculty (34.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   office > 0: course (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   email > 1: project (2.0)
+|   |   |   |   |   |   |   |   |   |   science > 2
+|   |   |   |   |   |   |   |   |   |   |   department <= 1: faculty (8.0)
+|   |   |   |   |   |   |   |   |   |   |   department > 1: staff (3.0/1.0)
+|   |   |   |   |   |   |   |   |   welcome > 0
+|   |   |   |   |   |   |   |   |   |   classs <= 0: project (7.0)
+|   |   |   |   |   |   |   |   |   |   classs > 0: course (3.0/1.0)
+|   |   |   |   |   |   |   |   research > 0
+|   |   |   |   |   |   |   |   |   phone <= 0
+|   |   |   |   |   |   |   |   |   |   interest <= 0
+|   |   |   |   |   |   |   |   |   |   |   research <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   home <= 0: project (24.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   home > 0: faculty (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   research > 1: project (80.0/14.0)
+|   |   |   |   |   |   |   |   |   |   interest > 0: faculty (25.0/6.0)
+|   |   |   |   |   |   |   |   |   phone > 0: faculty (5.0)
+|   |   |   |   |   |   |   fax > 0
+|   |   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   |   server <= 3: faculty (53.0/4.0)
+|   |   |   |   |   |   |   |   |   server > 3: project (2.0)
+|   |   |   |   |   |   |   |   welcome > 0: project (2.0/1.0)
+|   |   |   |   |   |   mimeversion > 0: student (17.0/5.0)
+|   |   |   |   |   thu > 0
+|   |   |   |   |   |   student <= 0
+|   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   office <= 1
+|   |   |   |   |   |   |   |   |   home <= 1
+|   |   |   |   |   |   |   |   |   |   server <= 1: faculty (229.0/67.0)
+|   |   |   |   |   |   |   |   |   |   server > 1
+|   |   |   |   |   |   |   |   |   |   |   href <= 6: faculty (2.0)
+|   |   |   |   |   |   |   |   |   |   |   href > 6: project (4.0/1.0)
+|   |   |   |   |   |   |   |   |   home > 1
+|   |   |   |   |   |   |   |   |   |   research <= 1
+|   |   |   |   |   |   |   |   |   |   |   computer <= 3: student (43.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   computer > 3: faculty (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   research > 1
+|   |   |   |   |   |   |   |   |   |   |   computer <= 1: student (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   computer > 1: faculty (10.0/1.0)
+|   |   |   |   |   |   |   |   office > 1
+|   |   |   |   |   |   |   |   |   office <= 2: student (16.0/1.0)
+|   |   |   |   |   |   |   |   |   office > 2
+|   |   |   |   |   |   |   |   |   |   href <= 2: faculty (4.0)
+|   |   |   |   |   |   |   |   |   |   href > 2: course (3.0/2.0)
+|   |   |   |   |   |   |   welcome > 0: student (18.0/4.0)
+|   |   |   |   |   |   student > 0
+|   |   |   |   |   |   |   research <= 1
+|   |   |   |   |   |   |   |   phd <= 2: student (115.0/14.0)
+|   |   |   |   |   |   |   |   phd > 2: faculty (2.0)
+|   |   |   |   |   |   |   research > 1
+|   |   |   |   |   |   |   |   department <= 2
+|   |   |   |   |   |   |   |   |   phd <= 0
+|   |   |   |   |   |   |   |   |   |   href <= 4: project (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   href > 4
+|   |   |   |   |   |   |   |   |   |   |   contentlength <= 0: faculty (2.0)
+|   |   |   |   |   |   |   |   |   |   |   contentlength > 0: student (7.0)
+|   |   |   |   |   |   |   |   |   phd > 0
+|   |   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   |   science <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   science <= 0: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   science > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   src <= 3: faculty (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   src > 3: student (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   science > 2: student (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   currently > 0: student (7.0)
+|   |   |   |   |   |   |   |   department > 2: faculty (3.0)
+|   |   |   |   tue > 0
+|   |   |   |   |   department <= 1
+|   |   |   |   |   |   research <= 0
+|   |   |   |   |   |   |   mimeversion <= 0
+|   |   |   |   |   |   |   |   phd <= 0
+|   |   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   |   server <= 1: student (409.0/193.0)
+|   |   |   |   |   |   |   |   |   |   server > 1
+|   |   |   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   student <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   thu <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   office <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 1: other (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 1: project (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   office > 0: staff (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   thu > 0: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   student > 1: department (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   department > 0: faculty (2.0/1.0)
+|   |   |   |   |   |   |   |   |   classs > 0
+|   |   |   |   |   |   |   |   |   |   science <= 1
+|   |   |   |   |   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   nov <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   href <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 1: other (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 1: student (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   href > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   href <= 3: project (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   href > 3: course (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   nov > 1: course (21.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   welcome > 0
+|   |   |   |   |   |   |   |   |   |   |   |   href <= 4: course (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   href > 4: student (2.0)
+|   |   |   |   |   |   |   |   |   |   science > 1
+|   |   |   |   |   |   |   |   |   |   |   student <= 0: faculty (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   student > 0: student (12.0/4.0)
+|   |   |   |   |   |   |   |   phd > 0
+|   |   |   |   |   |   |   |   |   student <= 0
+|   |   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   |   thu <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   email <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   href <= 0: project (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   href > 0: student (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   email > 1: faculty (2.0)
+|   |   |   |   |   |   |   |   |   |   |   thu > 0: faculty (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   server > 1: other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   student > 0: student (37.0/1.0)
+|   |   |   |   |   |   |   mimeversion > 0: course (13.0/1.0)
+|   |   |   |   |   |   research > 0
+|   |   |   |   |   |   |   computer <= 10
+|   |   |   |   |   |   |   |   student <= 0
+|   |   |   |   |   |   |   |   |   interest <= 0
+|   |   |   |   |   |   |   |   |   |   office <= 0
+|   |   |   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   home <= 4: project (70.0/24.0)
+|   |   |   |   |   |   |   |   |   |   |   |   home > 4: student (3.0)
+|   |   |   |   |   |   |   |   |   |   |   department > 0
+|   |   |   |   |   |   |   |   |   |   |   |   thu <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   email <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   science <= 1: project (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   science > 1: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   research <= 2: department (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   research > 2: project (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   email > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fax <= 0: student (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fax > 0: staff (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   currently > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 1: faculty (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 1: staff (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   thu > 0: faculty (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   office > 0: student (17.0/7.0)
+|   |   |   |   |   |   |   |   |   interest > 0
+|   |   |   |   |   |   |   |   |   |   gmt <= 1: student (2.0)
+|   |   |   |   |   |   |   |   |   |   gmt > 1
+|   |   |   |   |   |   |   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   home <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   thu <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   home <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   server <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   server <= 1: student (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   server > 1: faculty (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   currently <= 0: faculty (16.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   currently > 0: staff (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   server > 2: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   home > 2: project (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   thu > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home <= 0: project (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home > 0: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university > 0: faculty (14.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   home > 4: staff (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   welcome > 0: student (5.0/1.0)
+|   |   |   |   |   |   |   |   student > 0
+|   |   |   |   |   |   |   |   |   student <= 2
+|   |   |   |   |   |   |   |   |   |   mimeversion <= 0: student (141.0/33.0)
+|   |   |   |   |   |   |   |   |   |   mimeversion > 0: project (2.0)
+|   |   |   |   |   |   |   |   |   student > 2
+|   |   |   |   |   |   |   |   |   |   home <= 1: project (4.0)
+|   |   |   |   |   |   |   |   |   |   home > 1: faculty (2.0/1.0)
+|   |   |   |   |   |   |   computer > 10
+|   |   |   |   |   |   |   |   interest <= 0: other (6.0/1.0)
+|   |   |   |   |   |   |   |   interest > 0: faculty (2.0)
+|   |   |   |   |   department > 1
+|   |   |   |   |   |   research <= 2
+|   |   |   |   |   |   |   gmt <= 1: department (10.0/1.0)
+|   |   |   |   |   |   |   gmt > 1
+|   |   |   |   |   |   |   |   department <= 3
+|   |   |   |   |   |   |   |   |   thu <= 0
+|   |   |   |   |   |   |   |   |   |   phd <= 0
+|   |   |   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   phone <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href <= 10: department (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href > 10: other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university > 0: student (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   phone > 0: department (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   server > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 2: staff (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   computer > 2: department (8.0)
+|   |   |   |   |   |   |   |   |   |   |   currently > 0
+|   |   |   |   |   |   |   |   |   |   |   |   home <= 1: project (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   home > 1: student (2.0)
+|   |   |   |   |   |   |   |   |   |   phd > 0: student (16.0/4.0)
+|   |   |   |   |   |   |   |   |   thu > 0
+|   |   |   |   |   |   |   |   |   |   research <= 0
+|   |   |   |   |   |   |   |   |   |   |   href <= 2: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   href > 2: faculty (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   research > 0
+|   |   |   |   |   |   |   |   |   |   |   computer <= 0: project (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   computer > 0: student (9.0/1.0)
+|   |   |   |   |   |   |   |   department > 3
+|   |   |   |   |   |   |   |   |   phd <= 0: department (12.0/1.0)
+|   |   |   |   |   |   |   |   |   phd > 0: faculty (2.0/1.0)
+|   |   |   |   |   |   research > 2
+|   |   |   |   |   |   |   student <= 1
+|   |   |   |   |   |   |   |   nov <= 1
+|   |   |   |   |   |   |   |   |   src <= 8: project (10.0)
+|   |   |   |   |   |   |   |   |   src > 8: department (4.0/1.0)
+|   |   |   |   |   |   |   |   nov > 1
+|   |   |   |   |   |   |   |   |   home <= 0: department (2.0/1.0)
+|   |   |   |   |   |   |   |   |   home > 0: staff (3.0)
+|   |   |   |   |   |   |   student > 1: faculty (3.0/2.0)
+|   |   |   course > 0
+|   |   |   |   phd <= 0
+|   |   |   |   |   department <= 1
+|   |   |   |   |   |   university <= 1
+|   |   |   |   |   |   |   fax <= 0
+|   |   |   |   |   |   |   |   research <= 0: course (322.0/38.0)
+|   |   |   |   |   |   |   |   research > 0
+|   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   src <= 24
+|   |   |   |   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   course <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   office <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tue <= 0: faculty (14.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tue > 0: student (15.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   office > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   course <= 1: faculty (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   course > 1: course (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   course > 2: course (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   classs > 0: course (32.0/5.0)
+|   |   |   |   |   |   |   |   |   |   src > 24: project (2.0/1.0)
+|   |   |   |   |   |   |   |   |   currently > 0: student (8.0/1.0)
+|   |   |   |   |   |   |   fax > 0
+|   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   src <= 0: faculty (11.0/1.0)
+|   |   |   |   |   |   |   |   |   src > 0: student (6.0/2.0)
+|   |   |   |   |   |   |   |   classs > 0: course (6.0)
+|   |   |   |   |   |   university > 1
+|   |   |   |   |   |   |   tue <= 0
+|   |   |   |   |   |   |   |   classs <= 1
+|   |   |   |   |   |   |   |   |   href <= 19: faculty (15.0/2.0)
+|   |   |   |   |   |   |   |   |   href > 19: project (3.0/1.0)
+|   |   |   |   |   |   |   |   classs > 1: course (3.0)
+|   |   |   |   |   |   |   tue > 0
+|   |   |   |   |   |   |   |   tue <= 1
+|   |   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   |   office <= 0: department (11.0/4.0)
+|   |   |   |   |   |   |   |   |   |   office > 0: student (2.0)
+|   |   |   |   |   |   |   |   |   classs > 0
+|   |   |   |   |   |   |   |   |   |   science <= 1: course (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   science > 1: student (2.0)
+|   |   |   |   |   |   |   |   tue > 1: course (4.0/1.0)
+|   |   |   |   |   department > 1
+|   |   |   |   |   |   tue <= 0
+|   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   office <= 0
+|   |   |   |   |   |   |   |   |   student <= 2: faculty (9.0/2.0)
+|   |   |   |   |   |   |   |   |   student > 2: course (2.0/1.0)
+|   |   |   |   |   |   |   |   office > 0: student (3.0)
+|   |   |   |   |   |   |   classs > 0: course (8.0)
+|   |   |   |   |   |   tue > 0
+|   |   |   |   |   |   |   server <= 6
+|   |   |   |   |   |   |   |   office <= 2
+|   |   |   |   |   |   |   |   |   src <= 0: course (3.0/2.0)
+|   |   |   |   |   |   |   |   |   src > 0: department (43.0/3.0)
+|   |   |   |   |   |   |   |   office > 2: faculty (2.0/1.0)
+|   |   |   |   |   |   |   server > 6: other (2.0/1.0)
+|   |   |   |   phd > 0
+|   |   |   |   |   welcome <= 0
+|   |   |   |   |   |   department <= 3
+|   |   |   |   |   |   |   gmt <= 1
+|   |   |   |   |   |   |   |   tue <= 0: faculty (7.0/1.0)
+|   |   |   |   |   |   |   |   tue > 0: department (4.0)
+|   |   |   |   |   |   |   gmt > 1
+|   |   |   |   |   |   |   |   student <= 0: faculty (30.0/2.0)
+|   |   |   |   |   |   |   |   student > 0
+|   |   |   |   |   |   |   |   |   science <= 4
+|   |   |   |   |   |   |   |   |   |   university <= 4: student (23.0/5.0)
+|   |   |   |   |   |   |   |   |   |   university > 4: faculty (3.0)
+|   |   |   |   |   |   |   |   |   science > 4
+|   |   |   |   |   |   |   |   |   |   science <= 7: department (2.0)
+|   |   |   |   |   |   |   |   |   |   science > 7: faculty (3.0)
+|   |   |   |   |   |   department > 3
+|   |   |   |   |   |   |   office <= 1
+|   |   |   |   |   |   |   |   href <= 0: faculty (3.0/1.0)
+|   |   |   |   |   |   |   |   href > 0: department (5.0)
+|   |   |   |   |   |   |   office > 1: other (2.0/1.0)
+|   |   |   |   |   welcome > 0
+|   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   classs <= 0: department (3.0/1.0)
+|   |   |   |   |   |   |   classs > 0: course (2.0)
+|   |   |   |   |   |   currently > 0: student (2.0)
+|   associate > 0
+|   |   classs <= 1
+|   |   |   computer <= 14
+|   |   |   |   nov <= 0
+|   |   |   |   |   mimeversion <= 0
+|   |   |   |   |   |   fax <= 0
+|   |   |   |   |   |   |   tue <= 0
+|   |   |   |   |   |   |   |   computer <= 2: other (2.0)
+|   |   |   |   |   |   |   |   computer > 2: faculty (9.0/3.0)
+|   |   |   |   |   |   |   tue > 0: other (12.0/1.0)
+|   |   |   |   |   |   fax > 0: faculty (7.0)
+|   |   |   |   |   mimeversion > 0: faculty (48.0/8.0)
+|   |   |   |   nov > 0: faculty (207.0/27.0)
+|   |   |   computer > 14
+|   |   |   |   department <= 2
+|   |   |   |   |   nov <= 0: other (2.0)
+|   |   |   |   |   nov > 0: faculty (3.0/1.0)
+|   |   |   |   department > 2: department (2.0)
+|   |   classs > 1
+|   |   |   course <= 0: faculty (5.0/1.0)
+|   |   |   course > 0: course (15.0/3.0)
+endereco > 0
+|   fax <= 0
+|   |   phd <= 0
+|   |   |   thu <= 0
+|   |   |   |   office <= 1
+|   |   |   |   |   mimeversion <= 0: other (1642.0/75.0)
+|   |   |   |   |   mimeversion > 0
+|   |   |   |   |   |   course <= 0
+|   |   |   |   |   |   |   home <= 0
+|   |   |   |   |   |   |   |   phone <= 0: other (734.0/89.0)
+|   |   |   |   |   |   |   |   phone > 0
+|   |   |   |   |   |   |   |   |   computer <= 1: other (13.0/2.0)
+|   |   |   |   |   |   |   |   |   computer > 1: student (8.0/1.0)
+|   |   |   |   |   |   |   home > 0
+|   |   |   |   |   |   |   |   phone <= 0
+|   |   |   |   |   |   |   |   |   science <= 2
+|   |   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   |   research <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   student <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   href <= 14
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   home <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 0: other (68.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 0: other (23.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   interest <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 9: student (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 9: other (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   department > 0: other (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href > 4: student (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   interest > 0: other (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   home > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   endereco <= 3: student (36.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   endereco > 3: other (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   href > 14: other (15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   student > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 0: other (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   computer > 0: student (20.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   research > 1: other (25.0/10.0)
+|   |   |   |   |   |   |   |   |   |   server > 1: other (33.0/5.0)
+|   |   |   |   |   |   |   |   |   science > 2
+|   |   |   |   |   |   |   |   |   |   science <= 3
+|   |   |   |   |   |   |   |   |   |   |   computer <= 5: faculty (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   computer > 5: other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   science > 3: other (12.0/2.0)
+|   |   |   |   |   |   |   |   phone > 0
+|   |   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   |   home <= 3: student (10.0)
+|   |   |   |   |   |   |   |   |   |   home > 3: other (3.0)
+|   |   |   |   |   |   |   |   |   classs > 0: faculty (2.0/1.0)
+|   |   |   |   |   |   course > 0
+|   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   research <= 0
+|   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   src <= 25
+|   |   |   |   |   |   |   |   |   |   |   office <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   course <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   src <= 2: other (73.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   src > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 7: course (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 7: other (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   course > 5: course (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   office > 0
+|   |   |   |   |   |   |   |   |   |   |   |   student <= 0: course (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   student > 0: other (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   src > 25: course (2.0/1.0)
+|   |   |   |   |   |   |   |   |   department > 0
+|   |   |   |   |   |   |   |   |   |   course <= 2
+|   |   |   |   |   |   |   |   |   |   |   computer <= 4: student (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   computer > 4: other (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   course > 2: course (12.0/3.0)
+|   |   |   |   |   |   |   |   research > 0: other (35.0/10.0)
+|   |   |   |   |   |   |   currently > 0
+|   |   |   |   |   |   |   |   src <= 1
+|   |   |   |   |   |   |   |   |   home <= 1: other (10.0)
+|   |   |   |   |   |   |   |   |   home > 1: student (2.0)
+|   |   |   |   |   |   |   |   src > 1: student (10.0)
+|   |   |   |   office > 1
+|   |   |   |   |   server <= 2
+|   |   |   |   |   |   gmt <= 1: other (18.0/2.0)
+|   |   |   |   |   |   gmt > 1
+|   |   |   |   |   |   |   student <= 5
+|   |   |   |   |   |   |   |   tue <= 0
+|   |   |   |   |   |   |   |   |   nov <= 4
+|   |   |   |   |   |   |   |   |   |   nov <= 0
+|   |   |   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   science <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   classs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   course <= 0: course (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   course > 0: other (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   classs > 0: course (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   science > 1: other (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   department > 0: other (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   nov > 0: course (19.0/2.0)
+|   |   |   |   |   |   |   |   |   nov > 4: other (3.0)
+|   |   |   |   |   |   |   |   tue > 0: other (25.0/6.0)
+|   |   |   |   |   |   |   student > 5: other (10.0)
+|   |   |   |   |   server > 2: course (4.0)
+|   |   |   thu > 0
+|   |   |   |   nov <= 0
+|   |   |   |   |   mimeversion <= 0: other (131.0/4.0)
+|   |   |   |   |   mimeversion > 0
+|   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   computer <= 0: other (9.0/2.0)
+|   |   |   |   |   |   |   computer > 0: course (4.0)
+|   |   |   |   |   |   department > 0: other (2.0/1.0)
+|   |   |   |   nov > 0
+|   |   |   |   |   gmt <= 1
+|   |   |   |   |   |   endereco <= 3
+|   |   |   |   |   |   |   currently <= 1
+|   |   |   |   |   |   |   |   research <= 3
+|   |   |   |   |   |   |   |   |   university <= 1: course (57.0/6.0)
+|   |   |   |   |   |   |   |   |   university > 1
+|   |   |   |   |   |   |   |   |   |   course <= 1: project (3.0)
+|   |   |   |   |   |   |   |   |   |   course > 1: course (2.0/1.0)
+|   |   |   |   |   |   |   |   research > 3: project (2.0)
+|   |   |   |   |   |   |   currently > 1: project (3.0)
+|   |   |   |   |   |   endereco > 3
+|   |   |   |   |   |   |   home <= 0: other (2.0)
+|   |   |   |   |   |   |   home > 0: project (2.0/1.0)
+|   |   |   |   |   gmt > 1
+|   |   |   |   |   |   email <= 1
+|   |   |   |   |   |   |   classs <= 2
+|   |   |   |   |   |   |   |   associate <= 0
+|   |   |   |   |   |   |   |   |   tue <= 0
+|   |   |   |   |   |   |   |   |   |   home <= 0
+|   |   |   |   |   |   |   |   |   |   |   course <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   student <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   endereco <= 3: student (21.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   endereco > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   href <= 1: other (41.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   href > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 0: project (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 0: student (6.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   student > 0: student (20.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   course > 1: course (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   home > 0
+|   |   |   |   |   |   |   |   |   |   |   research <= 2: student (146.0/24.0)
+|   |   |   |   |   |   |   |   |   |   |   research > 2: project (5.0/1.0)
+|   |   |   |   |   |   |   |   |   tue > 0
+|   |   |   |   |   |   |   |   |   |   server <= 5
+|   |   |   |   |   |   |   |   |   |   |   home <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   currently <= 0: other (69.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   currently > 0: student (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   home > 0
+|   |   |   |   |   |   |   |   |   |   |   |   endereco <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   src <= 0: other (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   src > 0: student (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   endereco > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home <= 1: other (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home > 1: student (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   university > 0: student (17.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   currently > 0: other (2.0)
+|   |   |   |   |   |   |   |   |   |   server > 5: project (3.0/1.0)
+|   |   |   |   |   |   |   |   associate > 0
+|   |   |   |   |   |   |   |   |   tue <= 0: faculty (5.0/2.0)
+|   |   |   |   |   |   |   |   |   tue > 0: other (2.0/1.0)
+|   |   |   |   |   |   |   classs > 2
+|   |   |   |   |   |   |   |   tue <= 0: course (9.0/3.0)
+|   |   |   |   |   |   |   |   tue > 0: other (13.0/2.0)
+|   |   |   |   |   |   email > 1
+|   |   |   |   |   |   |   university <= 1
+|   |   |   |   |   |   |   |   office <= 1
+|   |   |   |   |   |   |   |   |   course <= 0: other (2.0)
+|   |   |   |   |   |   |   |   |   course > 0: course (2.0)
+|   |   |   |   |   |   |   |   office > 1: course (18.0)
+|   |   |   |   |   |   |   university > 1
+|   |   |   |   |   |   |   |   tue <= 0: student (3.0/1.0)
+|   |   |   |   |   |   |   |   tue > 0: other (3.0)
+|   |   phd > 0
+|   |   |   tue <= 0
+|   |   |   |   department <= 3
+|   |   |   |   |   associate <= 0
+|   |   |   |   |   |   email <= 0
+|   |   |   |   |   |   |   src <= 4
+|   |   |   |   |   |   |   |   student <= 3
+|   |   |   |   |   |   |   |   |   gmt <= 1: other (3.0)
+|   |   |   |   |   |   |   |   |   gmt > 1
+|   |   |   |   |   |   |   |   |   |   computer <= 6
+|   |   |   |   |   |   |   |   |   |   |   currently <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   phd <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   student <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   computer <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   university <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src <= 0: other (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   src > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home <= 1: faculty (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   home > 1: student (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   university > 1: faculty (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   computer > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   research <= 0: student (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   research > 0: faculty (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   student > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   department <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   course <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href <= 0: other (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   href > 0: student (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   department > 0: student (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   course > 0: other (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   department > 1: faculty (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   phd > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   student <= 0: other (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   student > 0: faculty (4.0)
+|   |   |   |   |   |   |   |   |   |   |   currently > 0
+|   |   |   |   |   |   |   |   |   |   |   |   university <= 1: student (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   university > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   department <= 1: faculty (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   department > 1: other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   computer > 6
+|   |   |   |   |   |   |   |   |   |   |   interest <= 2: faculty (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   interest > 2: other (2.0)
+|   |   |   |   |   |   |   |   student > 3: other (5.0/1.0)
+|   |   |   |   |   |   |   src > 4
+|   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   server <= 1
+|   |   |   |   |   |   |   |   |   |   phone <= 0
+|   |   |   |   |   |   |   |   |   |   |   student <= 0: other (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   student > 0: student (4.0)
+|   |   |   |   |   |   |   |   |   |   phone > 0: other (3.0)
+|   |   |   |   |   |   |   |   |   server > 1: student (2.0)
+|   |   |   |   |   |   |   |   department > 0: student (14.0)
+|   |   |   |   |   |   email > 0
+|   |   |   |   |   |   |   phd <= 4
+|   |   |   |   |   |   |   |   computer <= 0: faculty (2.0/1.0)
+|   |   |   |   |   |   |   |   computer > 0: student (28.0/2.0)
+|   |   |   |   |   |   |   phd > 4: other (2.0)
+|   |   |   |   |   associate > 0
+|   |   |   |   |   |   phone <= 0: faculty (16.0/4.0)
+|   |   |   |   |   |   phone > 0: staff (2.0)
+|   |   |   |   department > 3: other (18.0/2.0)
+|   |   |   tue > 0
+|   |   |   |   mimeversion <= 0: other (78.0/9.0)
+|   |   |   |   mimeversion > 0: course (2.0/1.0)
+|   fax > 0
+|   |   gmt <= 1
+|   |   |   research <= 2: other (17.0)
+|   |   |   research > 2
+|   |   |   |   nov <= 0: other (2.0)
+|   |   |   |   nov > 0: faculty (4.0)
+|   |   gmt > 1
+|   |   |   tue <= 0
+|   |   |   |   email <= 3
+|   |   |   |   |   office <= 2
+|   |   |   |   |   |   associate <= 0
+|   |   |   |   |   |   |   course <= 0
+|   |   |   |   |   |   |   |   science <= 0
+|   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   home <= 0: other (3.0)
+|   |   |   |   |   |   |   |   |   |   home > 0: student (11.0/2.0)
+|   |   |   |   |   |   |   |   |   department > 0
+|   |   |   |   |   |   |   |   |   |   nov <= 0: other (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   nov > 0: faculty (2.0)
+|   |   |   |   |   |   |   |   science > 0
+|   |   |   |   |   |   |   |   |   src <= 2
+|   |   |   |   |   |   |   |   |   |   department <= 0
+|   |   |   |   |   |   |   |   |   |   |   thu <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   science <= 1: faculty (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   science > 1: student (4.0)
+|   |   |   |   |   |   |   |   |   |   |   thu > 0
+|   |   |   |   |   |   |   |   |   |   |   |   research <= 1: student (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   research > 1: staff (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   department > 0
+|   |   |   |   |   |   |   |   |   |   |   student <= 0: faculty (31.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   student > 0: student (10.0/3.0)
+|   |   |   |   |   |   |   |   |   src > 2: student (20.0/6.0)
+|   |   |   |   |   |   |   course > 0
+|   |   |   |   |   |   |   |   science <= 3
+|   |   |   |   |   |   |   |   |   computer <= 1: other (2.0)
+|   |   |   |   |   |   |   |   |   computer > 1: faculty (5.0)
+|   |   |   |   |   |   |   |   science > 3: department (2.0/1.0)
+|   |   |   |   |   |   associate > 0
+|   |   |   |   |   |   |   associate <= 1: faculty (19.0/4.0)
+|   |   |   |   |   |   |   associate > 1: other (2.0)
+|   |   |   |   |   office > 2: student (11.0/1.0)
+|   |   |   |   email > 3: other (5.0)
+|   |   |   tue > 0
+|   |   |   |   currently <= 0: other (46.0/10.0)
+|   |   |   |   currently > 0
+|   |   |   |   |   office <= 0
+|   |   |   |   |   |   associate <= 0: student (4.0)
+|   |   |   |   |   |   associate > 0: faculty (3.0)
+|   |   |   |   |   office > 0: other (2.0/1.0)
+
+Number of Leaves  : 	415
+
+Size of the tree : 	829
+
+
+Time taken to build model: 0.41 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1786               71.8712 %
+Incorrectly Classified Instances       699               28.1288 %
+Kappa statistic                          0.5932
+Mean absolute error                      0.1081
+Root mean squared error                  0.2564
+Relative absolute error                 52.6793 %
+Root relative squared error             80.1867 %
+Total Number of Instances             2485     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,592    0,033    0,675      0,592    0,631      0,593    0,847     0,587     course
+                 0,431    0,011    0,490      0,431    0,459      0,448    0,691     0,339     department
+                 0,604    0,058    0,620      0,604    0,612      0,552    0,826     0,530     faculty
+                 0,919    0,177    0,817      0,919    0,865      0,740    0,891     0,825     other
+                 0,273    0,014    0,577      0,273    0,370      0,369    0,740     0,320     project
+                 0,026    0,005    0,071      0,026    0,038      0,034    0,545     0,033     staff
+                 0,633    0,095    0,613      0,633    0,623      0,531    0,796     0,511     student
+Weighted Avg.    0,719    0,113    0,701      0,719    0,704      0,616    0,839     0,642     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  154    0    9   67    7    0   23 |    a = course
+    8   25    4    5    3    0   13 |    b = department
+   17    8  204   37   10    6   56 |    c = faculty
+   20    3   19 1055    6    1   44 |    d = other
+   11    3   27   38   45    3   38 |    e = project
+    1    1   11    8    0    1   17 |    f = staff
+   17   11   55   82    7    3  302 |    g = student
+
+

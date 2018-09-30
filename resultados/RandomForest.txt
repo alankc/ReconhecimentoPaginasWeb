@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     modelo-weka.filters.unsupervised.attribute.Remove-R2-3,5-8,10-11,19-20,22-26,31-37,39,41-44,46-55,57,60,63-65,67-68,71,74
+Instances:    8282
+Attributes:   30
+              computer
+              gmt
+              server
+              science
+              home
+              lastmodified
+              contentlength
+              nov
+              university
+              research
+              department
+              course
+              office
+              email
+              student
+              tue
+              interest
+              classs
+              welcome
+              phd
+              associate
+              thu
+              fax
+              mimeversion
+              currently
+              phone
+              href
+              src
+              endereco
+              class
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 2.85 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.22 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1887               75.9356 %
+Incorrectly Classified Instances       598               24.0644 %
+Kappa statistic                          0.6532
+Mean absolute error                      0.1081
+Root mean squared error                  0.2214
+Relative absolute error                 52.6841 %
+Root relative squared error             69.2637 %
+Total Number of Instances             2485     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,731    0,036    0,706      0,731    0,718      0,685    0,956     0,810     course
+                 0,379    0,003    0,759      0,379    0,506      0,529    0,970     0,661     department
+                 0,660    0,051    0,670      0,660    0,665      0,612    0,944     0,741     faculty
+                 0,930    0,147    0,844      0,930    0,885      0,781    0,960     0,949     other
+                 0,309    0,013    0,638      0,309    0,416      0,418    0,893     0,533     project
+                 0,051    0,002    0,333      0,051    0,089      0,126    0,729     0,108     staff
+                 0,694    0,086    0,658      0,694    0,676      0,596    0,913     0,735     student
+Weighted Avg.    0,759    0,096    0,747      0,759    0,745      0,672    0,940     0,818     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  190    0    4   46    2    1   17 |    a = course
+    9   22    6    3    4    0   14 |    b = department
+   13    3  223   33    6    0   60 |    c = faculty
+   23    1   12 1068    8    0   36 |    d = other
+   15    1   28   39   51    0   31 |    e = project
+    3    1    8   10    1    2   14 |    f = staff
+   16    1   52   66    8    3  331 |    g = student
+
+

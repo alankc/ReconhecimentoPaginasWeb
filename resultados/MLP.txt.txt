@@ -1,0 +1,826 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     modelo-weka.filters.unsupervised.attribute.Remove-R2-3,5-8,10-11,19-20,22-26,31-37,39,41-44,46-55,57,60,63-65,67-68,71,74
+Instances:    8282
+Attributes:   30
+              computer
+              gmt
+              server
+              science
+              home
+              lastmodified
+              contentlength
+              nov
+              university
+              research
+              department
+              course
+              office
+              email
+              student
+              tue
+              interest
+              classs
+              welcome
+              phd
+              associate
+              thu
+              fax
+              mimeversion
+              currently
+              phone
+              href
+              src
+              endereco
+              class
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.169195645828086
+    Node 7    -1.3409909919493979
+    Node 8    -2.5340154448714265
+    Node 9    4.328015655219442
+    Node 10    -6.900675303684671
+    Node 11    -1.891811883770024
+    Node 12    -2.8511618350841
+    Node 13    1.2975687469364396
+    Node 14    -1.3849550482531479
+    Node 15    0.9818889529438346
+    Node 16    -2.182998253132487
+    Node 17    1.2197074821541145
+    Node 18    -1.6087542909842716
+    Node 19    -8.045430759342604
+    Node 20    1.2352629461345177
+    Node 21    1.8865539769403115
+    Node 22    2.822781275012394
+    Node 23    -6.7184866778440675
+    Node 24    1.100222732247606
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -4.668184820299828
+    Node 7    -1.560334333182994
+    Node 8    5.378239131133451
+    Node 9    -1.5563631553749797
+    Node 10    -4.148165130516579
+    Node 11    -2.330242933338423
+    Node 12    1.8740706032636876
+    Node 13    -0.06529158239418281
+    Node 14    0.4745842487042259
+    Node 15    -3.524441920689358
+    Node 16    2.6419240795501024
+    Node 17    0.37709526025026774
+    Node 18    -8.228502162555726
+    Node 19    -0.563177391675795
+    Node 20    -0.7835800978296201
+    Node 21    -3.881820463626362
+    Node 22    3.2946800792608886
+    Node 23    -0.8970074444141937
+    Node 24    -5.673774050198002
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.6337020546195093
+    Node 7    2.5243333959857877
+    Node 8    -2.5010157851566883
+    Node 9    0.4997904905515624
+    Node 10    -3.2686024003409755
+    Node 11    2.0151456885413648
+    Node 12    1.9798439446852005
+    Node 13    -4.307031564680906
+    Node 14    0.5970432326492088
+    Node 15    -1.4389207220849727
+    Node 16    -0.7311041264483452
+    Node 17    1.1878153727658503
+    Node 18    1.6219620999951465
+    Node 19    -1.4070535182459143
+    Node 20    0.9895677418078667
+    Node 21    0.31587196458766237
+    Node 22    0.7791604151902765
+    Node 23    -3.61662844647585
+    Node 24    0.35893369107927486
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.8690897987810997
+    Node 7    -1.5037517448255273
+    Node 8    1.4339363414661186
+    Node 9    -3.5880119879011643
+    Node 10    4.541767355341034
+    Node 11    1.4904916126538608
+    Node 12    -1.3020941125432302
+    Node 13    2.0118955119517437
+    Node 14    -1.0158252229027096
+    Node 15    2.7492495193226163
+    Node 16    -0.7220299929214381
+    Node 17    -3.562951539144182
+    Node 18    3.3310545855754685
+    Node 19    7.697052754124157
+    Node 20    0.8551184425499001
+    Node 21    -1.3964231364968944
+    Node 22    -2.150458447922725
+    Node 23    8.532795125307413
+    Node 24    -2.284644317323495
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.38907883155391826
+    Node 7    2.168184188895824
+    Node 8    -0.663587405844481
+    Node 9    2.511663640424249
+    Node 10    -2.939020781634263
+    Node 11    -2.291286189963575
+    Node 12    -5.382183155448222
+    Node 13    -2.52696354025622
+    Node 14    -1.9853717223625238
+    Node 15    -0.8185334339452088
+    Node 16    -7.339060757183168
+    Node 17    -0.021669757230754275
+    Node 18    -2.666126605932882
+    Node 19    -0.7598680008011092
+    Node 20    0.17603179304708474
+    Node 21    -1.8970338153673156
+    Node 22    -1.4317384661749362
+    Node 23    0.5564504971890507
+    Node 24    0.24162971428915223
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -4.303355165864797
+    Node 7    1.2020421365056113
+    Node 8    0.09358923104332482
+    Node 9    -1.7898311844973673
+    Node 10    -1.416475834461979
+    Node 11    0.07757591111822276
+    Node 12    -1.544658872861549
+    Node 13    -0.695736545868489
+    Node 14    0.47452536884468893
+    Node 15    -1.3561631663572644
+    Node 16    -1.292649229807067
+    Node 17    0.4960737289757052
+    Node 18    0.41082398849770035
+    Node 19    -1.034787967361844
+    Node 20    -0.5267831947991148
+    Node 21    0.056403602958616156
+    Node 22    -1.2729605725394166
+    Node 23    -0.8221614130598827
+    Node 24    0.25312160233361775
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.77541703176207
+    Node 7    -2.441974598860051
+    Node 8    -2.660851913678606
+    Node 9    -8.655954952645814
+    Node 10    -6.046617952100666
+    Node 11    -1.431221937374399
+    Node 12    0.898615888626439
+    Node 13    -5.475221581887705
+    Node 14    1.4728328739775813
+    Node 15    -2.528774330626973
+    Node 16    0.46336286058212217
+    Node 17    1.8682414156282423
+    Node 18    0.581169467089948
+    Node 19    -3.815179848019534
+    Node 20    -1.1102171414916904
+    Node 21    -0.2759127793029864
+    Node 22    -1.5573830731858909
+    Node 23    -2.410072064887748
+    Node 24    2.006617512175151
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    1.967436797395201
+    Attrib computer    26.601890713150183
+    Attrib gmt    9.596865699131094
+    Attrib server    6.440257464248421
+    Attrib science    -0.3963860386542696
+    Attrib home    -14.954373180070682
+    Attrib lastmodified    -0.6473892361588102
+    Attrib contentlength    0.25230697489651865
+    Attrib nov    2.047109330400432
+    Attrib university    14.192739650650438
+    Attrib research    53.726880449066954
+    Attrib department    -2.5780203090445006
+    Attrib course    -8.271063945675248
+    Attrib office    -15.507819857074352
+    Attrib email    -1.1196263157570898
+    Attrib student    -50.54568602264115
+    Attrib tue    -51.77036461398497
+    Attrib interest    -2.7051896367570896
+    Attrib classs    -12.734278701949098
+    Attrib welcome    -2.05727477822215
+    Attrib phd    -1.5457865916475018
+    Attrib associate    51.516229965835485
+    Attrib thu    -6.603695945950898
+    Attrib fax    41.76277179505875
+    Attrib mimeversion    -3.1173936510135043
+    Attrib currently    1.384547188323141
+    Attrib phone    -0.6582637491322235
+    Attrib href    -17.28765649847176
+    Attrib src    -8.047210930001143
+    Attrib endereco    -1.243078390563645
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.2930912939447361
+    Attrib computer    -0.8823304388119648
+    Attrib gmt    -6.02741974735859
+    Attrib server    23.858792455193072
+    Attrib science    12.460153735998405
+    Attrib home    -11.910331922782863
+    Attrib lastmodified    -0.6785472606876248
+    Attrib contentlength    0.4757158334472809
+    Attrib nov    -39.4539644109774
+    Attrib university    1.4886303063890334
+    Attrib research    8.628628666096859
+    Attrib department    33.711539955470045
+    Attrib course    -0.9094480398674506
+    Attrib office    -6.694582122817901
+    Attrib email    -1.2733420274108675
+    Attrib student    1.1985400187095827
+    Attrib tue    29.890838526053198
+    Attrib interest    -16.839371282837387
+    Attrib classs    0.08339786543423272
+    Attrib welcome    4.426447964603365
+    Attrib phd    -14.949593609333927
+    Attrib associate    -10.490696652588282
+    Attrib thu    -21.268529896847713
+    Attrib fax    -11.018418609907263
+    Attrib mimeversion    -0.9329288655595286
+    Attrib currently    -8.290405465854839
+    Attrib phone    -11.444768993080004
+    Attrib href    -4.770382372639559
+    Attrib src    19.38669258547758
+    Attrib endereco    35.948551916675285
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.17144388861984494
+    Attrib computer    1.6000023157869447
+    Attrib gmt    -0.8245344284165946
+    Attrib server    0.8693078713562559
+    Attrib science    5.3725569275848635
+    Attrib home    1.7343809006066244
+    Attrib lastmodified    -3.8426422422363022
+    Attrib contentlength    -6.238853712122948
+    Attrib nov    7.791878789097929
+    Attrib university    -0.931309979988387
+    Attrib research    3.932663897150358
+    Attrib department    3.1469415813534836
+    Attrib course    -6.357030852715534
+    Attrib office    -12.652085814701572
+    Attrib email    0.29485533652336265
+    Attrib student    0.5083481460515267
+    Attrib tue    1.2978679100234034
+    Attrib interest    -4.360725513493227
+    Attrib classs    -0.28413279338406333
+    Attrib welcome    -0.31706765306901935
+    Attrib phd    -0.6571062501432472
+    Attrib associate    1.6737417749986174
+    Attrib thu    5.738004188185584
+    Attrib fax    0.05999221613913549
+    Attrib mimeversion    1.1818428127649343
+    Attrib currently    1.70671600582742
+    Attrib phone    -0.7026464004611453
+    Attrib href    0.39909879634243256
+    Attrib src    -0.8502289019328203
+    Attrib endereco    10.358723763719482
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -14.064225875221778
+    Attrib computer    0.07090517732452764
+    Attrib gmt    -0.27664355991040895
+    Attrib server    0.55427705440865
+    Attrib science    -2.377603762135268
+    Attrib home    -7.380917210401231
+    Attrib lastmodified    -1.591224805517649
+    Attrib contentlength    -0.6298188459413643
+    Attrib nov    -24.60877058374829
+    Attrib university    18.72490019673853
+    Attrib research    10.157065570755242
+    Attrib department    9.614994204350653
+    Attrib course    -0.8068516966148541
+    Attrib office    -18.03156392364186
+    Attrib email    3.2363661603884233
+    Attrib student    16.456386581065065
+    Attrib tue    45.09123757272998
+    Attrib interest    2.3279116711593564
+    Attrib classs    13.72831331949717
+    Attrib welcome    3.2643100726680627
+    Attrib phd    0.4245561949074687
+    Attrib associate    4.782625864808314
+    Attrib thu    -68.62853257736407
+    Attrib fax    -5.267440447363485
+    Attrib mimeversion    -1.4982464482389237
+    Attrib currently    -2.5433689052053685
+    Attrib phone    0.6360316674376213
+    Attrib href    -1.9505741907624776
+    Attrib src    -7.777971441972514
+    Attrib endereco    4.639541419419778
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -5.718978520413058
+    Attrib computer    27.68876037945294
+    Attrib gmt    -1.9058051389515898
+    Attrib server    -9.561648605362404
+    Attrib science    8.846132692137836
+    Attrib home    -9.069277498412466
+    Attrib lastmodified    -3.3593905650650986
+    Attrib contentlength    2.0097439011344638
+    Attrib nov    -42.987775225331404
+    Attrib university    25.99296835531994
+    Attrib research    -2.2797181121094083
+    Attrib department    -2.8304353577833514
+    Attrib course    -1.8649602819364295
+    Attrib office    -7.04098386844547
+    Attrib email    7.826335685467643
+    Attrib student    -43.36418543853709
+    Attrib tue    -23.28577357165282
+    Attrib interest    9.073285515945228
+    Attrib classs    -1.6661226053345535
+    Attrib welcome    -13.830309471135854
+    Attrib phd    20.1423642212666
+    Attrib associate    38.945398637909435
+    Attrib thu    16.70435204764378
+    Attrib fax    32.16429762553633
+    Attrib mimeversion    -3.2166047587659734
+    Attrib currently    -10.02036533561618
+    Attrib phone    5.917729181506915
+    Attrib href    -14.2804420046516
+    Attrib src    -11.616044465850116
+    Attrib endereco    -1.480422804017937
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    2.439057609383548
+    Attrib computer    -0.13352933712923623
+    Attrib gmt    2.7060195250339456
+    Attrib server    -2.838929643468885
+    Attrib science    4.443453140079861
+    Attrib home    -1.4890706245880612
+    Attrib lastmodified    2.0625707233242028
+    Attrib contentlength    -5.020571641259781
+    Attrib nov    0.4487975384878755
+    Attrib university    1.5784519492692937
+    Attrib research    -0.1530429546728718
+    Attrib department    4.0319144304003585
+    Attrib course    -0.2547858043844378
+    Attrib office    -1.6526607269506843
+    Attrib email    -2.861394704105952
+    Attrib student    -4.514854465961918
+    Attrib tue    -11.234732534819546
+    Attrib interest    7.469930183273652
+    Attrib classs    -5.229078645401305
+    Attrib welcome    -0.3628048534000072
+    Attrib phd    3.73813021278126
+    Attrib associate    6.590035781893635
+    Attrib thu    3.2086299949544665
+    Attrib fax    6.435796532381039
+    Attrib mimeversion    11.088343433446171
+    Attrib currently    -2.51864639635409
+    Attrib phone    0.22551327797606244
+    Attrib href    -0.7184714937892922
+    Attrib src    -0.5126026414510445
+    Attrib endereco    -3.3852493560287207
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    1.4839977247033325
+    Attrib computer    -0.06214338096750855
+    Attrib gmt    -0.4155197453004994
+    Attrib server    -1.6419024978621424
+    Attrib science    9.637479411709243
+    Attrib home    -5.795270821780686
+    Attrib lastmodified    1.1113709606386286
+    Attrib contentlength    2.98322891954302
+    Attrib nov    3.1830396390537596
+    Attrib university    -3.301187783355767
+    Attrib research    -5.045082280810233
+    Attrib department    -0.9704722892120887
+    Attrib course    0.6183509276080784
+    Attrib office    5.3509654490487515
+    Attrib email    0.2128495350767993
+    Attrib student    -0.46574403118982616
+    Attrib tue    -1.0013111284691523
+    Attrib interest    0.8792836639526103
+    Attrib classs    0.4270778896492361
+    Attrib welcome    1.1948141249956783
+    Attrib phd    -4.167185876330543
+    Attrib associate    0.6024130299843816
+    Attrib thu    11.937157214451572
+    Attrib fax    -3.2892838972983522
+    Attrib mimeversion    4.125810615173402
+    Attrib currently    -3.0458857720846746
+    Attrib phone    5.261275996750206
+    Attrib href    0.04150196142725373
+    Attrib src    -1.439280615994168
+    Attrib endereco    -0.4651430214338873
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    12.88254143078378
+    Attrib computer    -3.056358049755842
+    Attrib gmt    -8.312950536978931
+    Attrib server    -8.404819279542926
+    Attrib science    1.1275437076022286
+    Attrib home    1.2561857344265392
+    Attrib lastmodified    -5.929793406618326
+    Attrib contentlength    3.6021128235912405
+    Attrib nov    10.831080624652474
+    Attrib university    -2.195818840690055
+    Attrib research    -11.296681056980349
+    Attrib department    12.197982340920952
+    Attrib course    -14.225514584253466
+    Attrib office    -5.398824340133708
+    Attrib email    -8.843198136764052
+    Attrib student    -3.319184963551109
+    Attrib tue    -4.863644668462389
+    Attrib interest    24.59147748336223
+    Attrib classs    -22.653136031700274
+    Attrib welcome    0.3267703783061567
+    Attrib phd    9.139629471621712
+    Attrib associate    -2.5670364762038185
+    Attrib thu    25.316111629457264
+    Attrib fax    18.669035918679764
+    Attrib mimeversion    -2.104821770472226
+    Attrib currently    3.7744178173948426
+    Attrib phone    15.235925133242818
+    Attrib href    -2.3771835171339553
+    Attrib src    0.8533909902543916
+    Attrib endereco    -7.870332901968672
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -36.27644135908297
+    Attrib computer    4.8800821385859345
+    Attrib gmt    8.436515009921708
+    Attrib server    35.83345952453078
+    Attrib science    -42.403826739584915
+    Attrib home    -47.27120002537272
+    Attrib lastmodified    -1.6987742327633093
+    Attrib contentlength    -1.0286212559347478
+    Attrib nov    -52.070014867520904
+    Attrib university    13.609069747586142
+    Attrib research    -20.88519695273896
+    Attrib department    -32.806233563345614
+    Attrib course    39.91048958551558
+    Attrib office    -0.40488371645922855
+    Attrib email    32.082980284221826
+    Attrib student    -3.1355475414449026
+    Attrib tue    54.501464842918566
+    Attrib interest    -13.734723153106254
+    Attrib classs    56.58208532681963
+    Attrib welcome    -6.743348274206959
+    Attrib phd    -5.554540457405214
+    Attrib associate    12.581879600622651
+    Attrib thu    -16.720237422265818
+    Attrib fax    -17.75572197983551
+    Attrib mimeversion    0.36548852908696294
+    Attrib currently    -6.833540398209388
+    Attrib phone    -19.737955685022257
+    Attrib href    2.462079209350036
+    Attrib src    -9.489566459752634
+    Attrib endereco    1.7139833556383572
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    5.680157252728019
+    Attrib computer    2.48363280693473
+    Attrib gmt    -5.216030556437092
+    Attrib server    -5.0972083153364975
+    Attrib science    4.9769244062688065
+    Attrib home    3.710254274703183
+    Attrib lastmodified    4.413050618108249
+    Attrib contentlength    3.2714601405642236
+    Attrib nov    -1.6946578250916207
+    Attrib university    -3.5016881056462497
+    Attrib research    -8.333240791610837
+    Attrib department    2.2898076899112696
+    Attrib course    4.843487670293574
+    Attrib office    3.6440648396827275
+    Attrib email    -4.551274444232987
+    Attrib student    -1.6690392527347584
+    Attrib tue    -4.414362771352164
+    Attrib interest    13.469303778774043
+    Attrib classs    -7.944838988493988
+    Attrib welcome    4.116165139301058
+    Attrib phd    -2.1659075819446394
+    Attrib associate    -1.7050219514477312
+    Attrib thu    7.89979595150609
+    Attrib fax    1.373179971163111
+    Attrib mimeversion    4.186002148533627
+    Attrib currently    2.3022744487771654
+    Attrib phone    4.039953449442132
+    Attrib href    -0.14763679229352925
+    Attrib src    2.6124726996126775
+    Attrib endereco    -4.1884146782955725
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    3.740527774552934
+    Attrib computer    -1.73614734584274
+    Attrib gmt    -0.9488188592487307
+    Attrib server    -3.7181229648464824
+    Attrib science    4.978299379594753
+    Attrib home    -20.087682971765865
+    Attrib lastmodified    11.582043818646776
+    Attrib contentlength    7.261513393613764
+    Attrib nov    -0.832103061214444
+    Attrib university    -3.615337590319169
+    Attrib research    2.1843091809848856
+    Attrib department    -5.934845859251994
+    Attrib course    -7.407012962507733
+    Attrib office    4.705639807355396
+    Attrib email    -0.8652286482309474
+    Attrib student    -5.934422676913286
+    Attrib tue    -20.186774933008966
+    Attrib interest    0.8668926090755911
+    Attrib classs    -4.9233631509856055
+    Attrib welcome    6.17350148457241
+    Attrib phd    3.8547356555024117
+    Attrib associate    1.7549457500057069
+    Attrib thu    18.207792641619218
+    Attrib fax    4.73728947428263
+    Attrib mimeversion    24.640437025346085
+    Attrib currently    7.904307169131044
+    Attrib phone    5.753581593134588
+    Attrib href    -6.542740667536561
+    Attrib src    9.750837964584994
+    Attrib endereco    11.865048729034624
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -0.6902396663371239
+    Attrib computer    3.127451864368194
+    Attrib gmt    -2.8153876693341613
+    Attrib server    -5.801123799562925
+    Attrib science    7.349137750620054
+    Attrib home    -2.1519072660305127
+    Attrib lastmodified    1.2232221623788622
+    Attrib contentlength    -0.7831719172949855
+    Attrib nov    -6.389453874414994
+    Attrib university    8.704669570567026
+    Attrib research    -0.9709922993490063
+    Attrib department    0.4507684555875331
+    Attrib course    -3.093166685287009
+    Attrib office    -6.175771257067632
+    Attrib email    -0.5567951849530025
+    Attrib student    3.759600816353
+    Attrib tue    4.160138659793952
+    Attrib interest    -5.442736395100613
+    Attrib classs    -0.32807421332594777
+    Attrib welcome    -4.521082518971253
+    Attrib phd    1.8253531999104602
+    Attrib associate    -2.8835755649165224
+    Attrib thu    1.1292798857266153
+    Attrib fax    -1.47462120944336
+    Attrib mimeversion    2.212955465832627
+    Attrib currently    3.7802115915006618
+    Attrib phone    -3.0717522356979154
+    Attrib href    -4.464637153601225
+    Attrib src    -4.864169893802351
+    Attrib endereco    21.43195918434364
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -0.2727148639426833
+    Attrib computer    -0.8553830591495821
+    Attrib gmt    -0.2906209826535961
+    Attrib server    2.348002317995087
+    Attrib science    -6.543639578281611
+    Attrib home    -9.389919202136245
+    Attrib lastmodified    -1.0538915682252636
+    Attrib contentlength    -1.1901779942079056
+    Attrib nov    13.275431444883385
+    Attrib university    -1.6534715340947264
+    Attrib research    1.558938632821973
+    Attrib department    -0.3671570857036749
+    Attrib course    2.167832904749702
+    Attrib office    5.473306426376192
+    Attrib email    -0.8060005350795891
+    Attrib student    0.6509462135950604
+    Attrib tue    12.231130651833695
+    Attrib interest    4.344573952032203
+    Attrib classs    0.9282703077000999
+    Attrib welcome    2.0222837957186806
+    Attrib phd    -0.24076127688626855
+    Attrib associate    -0.6746002493231555
+    Attrib thu    -5.6209801237238235
+    Attrib fax    -0.18655814879895477
+    Attrib mimeversion    11.624810297048672
+    Attrib currently    -0.8605666960181177
+    Attrib phone    -7.219502808346482
+    Attrib href    -5.636610172071167
+    Attrib src    -2.916788146420597
+    Attrib endereco    10.538296587501167
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    -0.19068813490211756
+    Attrib computer    0.3991308435400307
+    Attrib gmt    0.2586436578429631
+    Attrib server    0.11928193701560308
+    Attrib science    -0.9981803946172227
+    Attrib home    0.2468825397786385
+    Attrib lastmodified    1.0424751853721337
+    Attrib contentlength    2.2483638208061687
+    Attrib nov    1.901160921219888
+    Attrib university    -0.6414691574609507
+    Attrib research    0.22886719345368683
+    Attrib department    -1.162757792924076
+    Attrib course    1.5974966627345535
+    Attrib office    -0.4316586657152617
+    Attrib email    0.37610828850779765
+    Attrib student    0.27856248307407344
+    Attrib tue    3.1962698774542146
+    Attrib interest    -1.0697446313476762
+    Attrib classs    0.9487785140716886
+    Attrib welcome    -0.5416477435502813
+    Attrib phd    0.7168781090197744
+    Attrib associate    0.7593952405892485
+    Attrib thu    -1.2048007859845413
+    Attrib fax    1.2962826038593382
+    Attrib mimeversion    2.947038920954424
+    Attrib currently    0.6533260164533374
+    Attrib phone    -0.31341472536226156
+    Attrib href    0.8166403821614219
+    Attrib src    -0.1841478809692075
+    Attrib endereco    10.603283457233484
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    4.7075082226901
+    Attrib computer    -2.592745354935697
+    Attrib gmt    -1.741190223974106
+    Attrib server    -5.332722562708389
+    Attrib science    0.4935625439509271
+    Attrib home    4.846430062730997
+    Attrib lastmodified    -0.5645536095345167
+    Attrib contentlength    0.3985943200429161
+    Attrib nov    20.7919504914418
+    Attrib university    -4.550116367258486
+    Attrib research    -12.558562354147208
+    Attrib department    -15.944421355985753
+    Attrib course    20.773810193762817
+    Attrib office    34.10916989692415
+    Attrib email    -0.5051250173013941
+    Attrib student    -2.8270683439855095
+    Attrib tue    -17.70471047004666
+    Attrib interest    3.6898538019195066
+    Attrib classs    4.432567303402827
+    Attrib welcome    -5.163786173536101
+    Attrib phd    -0.1733402820723474
+    Attrib associate    4.098787546179193
+    Attrib thu    6.529999346688713
+    Attrib fax    -1.7609335522138572
+    Attrib mimeversion    2.6292871980060464
+    Attrib currently    -5.634269048898854
+    Attrib phone    3.804108630941055
+    Attrib href    -5.4830660478615565
+    Attrib src    -12.629312983514893
+    Attrib endereco    -1.8898017671898675
+Sigmoid Node 22
+    Inputs    Weights
+    Threshold    4.722906003441799
+    Attrib computer    6.324557592751712
+    Attrib gmt    -1.9912194912988779
+    Attrib server    0.29761628411669633
+    Attrib science    4.206889319128488
+    Attrib home    0.27204043250505383
+    Attrib lastmodified    -1.980753592535778
+    Attrib contentlength    -0.11405976595213796
+    Attrib nov    56.790318502094
+    Attrib university    -10.43854371800076
+    Attrib research    -26.403578730727297
+    Attrib department    2.475272654487513
+    Attrib course    64.34359965414511
+    Attrib office    3.0378258293784515
+    Attrib email    2.03728651852489
+    Attrib student    -21.045066471799323
+    Attrib tue    -28.83126592907132
+    Attrib interest    -3.505512284348799
+    Attrib classs    13.138458743349982
+    Attrib welcome    -10.489009580722508
+    Attrib phd    -17.483728418363963
+    Attrib associate    9.40488111333117
+    Attrib thu    -9.917331584077475
+    Attrib fax    3.6634152381069636
+    Attrib mimeversion    -3.3160187622774777
+    Attrib currently    -19.837172069171856
+    Attrib phone    -0.5219370615484173
+    Attrib href    -0.4216288749067373
+    Attrib src    -3.878575558782249
+    Attrib endereco    -1.54349950317727
+Sigmoid Node 23
+    Inputs    Weights
+    Threshold    0.6747959407183988
+    Attrib computer    0.6701285778614277
+    Attrib gmt    -0.3419884981050154
+    Attrib server    0.6334176199312882
+    Attrib science    0.8611022285191646
+    Attrib home    -2.9426247376648056
+    Attrib lastmodified    -2.5365885436237483
+    Attrib contentlength    -4.746568828784825
+    Attrib nov    -2.7332808294724624
+    Attrib university    0.8232496232301082
+    Attrib research    -0.17913656888420632
+    Attrib department    0.4907849135502318
+    Attrib course    0.7626546682766446
+    Attrib office    14.304148191153718
+    Attrib email    0.12141645511074656
+    Attrib student    -0.8879502588812779
+    Attrib tue    1.7247927556422913
+    Attrib interest    5.629631243669839
+    Attrib classs    1.305185536443104
+    Attrib welcome    -2.3025363530924636
+    Attrib phd    -0.5229338592347879
+    Attrib associate    0.835220554621148
+    Attrib thu    -2.0158771964509623
+    Attrib fax    0.47257628578447286
+    Attrib mimeversion    -0.16233425186097916
+    Attrib currently    -0.10633948989703894
+    Attrib phone    1.7458380202144348
+    Attrib href    -1.2850999486405936
+    Attrib src    -0.19159825361937957
+    Attrib endereco    1.4323478337613156
+Sigmoid Node 24
+    Inputs    Weights
+    Threshold    6.016834838466377
+    Attrib computer    -2.2154350319146396
+    Attrib gmt    -1.990147341286976
+    Attrib server    -11.02676077514061
+    Attrib science    4.333950709517543
+    Attrib home    -0.6544777870898018
+    Attrib lastmodified    0.11803536320401975
+    Attrib contentlength    -0.8580762753393189
+    Attrib nov    3.958644258163762
+    Attrib university    -2.364447303058778
+    Attrib research    0.4163894451522342
+    Attrib department    -1.918320700924136
+    Attrib course    -3.321091360568487
+    Attrib office    2.9522854499270577
+    Attrib email    -1.9402024357465428
+    Attrib student    -3.624693622566431
+    Attrib tue    -39.715839827078504
+    Attrib interest    4.636158295872348
+    Attrib classs    -11.515448542966999
+    Attrib welcome    11.260276080623841
+    Attrib phd    3.540355543534803
+    Attrib associate    0.49691246469239353
+    Attrib thu    37.97063002003313
+    Attrib fax    4.4352566420008
+    Attrib mimeversion    0.04113657961468484
+    Attrib currently    2.444613437112314
+    Attrib phone    7.0001557632529945
+    Attrib href    -1.8713126090247383
+    Attrib src    5.49808046839428
+    Attrib endereco    3.8225416195006217
+Class course
+    Input
+    Node 0
+Class department
+    Input
+    Node 1
+Class faculty
+    Input
+    Node 2
+Class other
+    Input
+    Node 3
+Class project
+    Input
+    Node 4
+Class staff
+    Input
+    Node 5
+Class student
+    Input
+    Node 6
+
+
+Time taken to build model: 57.48 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1732               69.6982 %
+Incorrectly Classified Instances       753               30.3018 %
+Kappa statistic                          0.5647
+Mean absolute error                      0.1154
+Root mean squared error                  0.2486
+Relative absolute error                 56.0784 %
+Root relative squared error             77.3008 %
+Total Number of Instances             2485     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,609    0,029    0,723      0,609    0,661      0,626    0,913     0,734     course
+                 0,453    0,005    0,667      0,453    0,539      0,542    0,918     0,443     department
+                 0,421    0,017    0,802      0,421    0,552      0,536    0,915     0,695     faculty
+                 0,903    0,209    0,777      0,903    0,835      0,690    0,924     0,899     other
+                 0,363    0,039    0,389      0,363    0,375      0,334    0,807     0,337     project
+                 0,000    0,000    0,000      0,000    0,000      -0,003   0,626     0,026     staff
+                 0,673    0,131    0,561      0,673    0,612      0,508    0,869     0,622     student
+Weighted Avg.    0,697    0,128    0,692      0,697    0,682      0,588    0,898     0,736     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  167    3    2   66    8    0   28 |    a = course
+    1   24    2    6    4    0   16 |    b = department
+   15    1  150   49   39    1  101 |    c = faculty
+   20    6   12 1001   21    0   49 |    d = other
+    6    1    7   35   58    0   53 |    e = project
+    3    1    1   17    5    0   13 |    f = staff
+   19    0   13  115   14    0  332 |    g = student
+

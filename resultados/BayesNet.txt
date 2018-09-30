@@ -1,0 +1,122 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.SimulatedAnnealing -- -A 10.0 -U 10000 -D 0.999 -R 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     modelo-weka.filters.unsupervised.attribute.Remove-R2-3,5-8,10-11,19-20,22-26,31-37,39,41-44,46-55,57,60,63-65,67-68,71,74
+Instances:    8282
+Attributes:   30
+              computer
+              gmt
+              server
+              science
+              home
+              lastmodified
+              contentlength
+              nov
+              university
+              research
+              department
+              course
+              office
+              email
+              student
+              tue
+              interest
+              classs
+              welcome
+              phd
+              associate
+              thu
+              fax
+              mimeversion
+              currently
+              phone
+              href
+              src
+              endereco
+              class
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=30 #classindex=29
+Network structure (nodes followed by parents)
+computer(4): department science class 
+gmt(3): server lastmodified tue 
+server(2): home class lastmodified 
+science(4): phd university class 
+home(4): class science 
+lastmodified(2): home class 
+contentlength(2): gmt mimeversion endereco lastmodified 
+nov(4): gmt class tue 
+university(5): email class 
+research(4): class university interest 
+department(3): class university science 
+course(3): class student 
+office(4): class 
+email(5): office class 
+student(3): class science phd 
+tue(2): server class lastmodified 
+interest(2): class phd student 
+classs(3): class course 
+welcome(2): home class 
+phd(3): university class 
+associate(2): phd class 
+thu(2): endereco class nov tue mimeversion contentlength 
+fax(2): class office email 
+mimeversion(2): class tue gmt lastmodified endereco nov 
+currently(2): class interest 
+phone(4): fax email office 
+href(4): home gmt class 
+src(3): class href endereco 
+endereco(2): lastmodified tue gmt class nov 
+class(7): 
+LogScore Bayes: -135259.23336010426
+LogScore BDeu: -158605.45834273362
+LogScore MDL: -154215.82168784615
+LogScore ENTROPY: -135152.67426628788
+LogScore AIC: -139378.67426628785
+
+
+Time taken to build model: 2.53 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1867               75.1308 %
+Incorrectly Classified Instances       618               24.8692 %
+Kappa statistic                          0.6452
+Mean absolute error                      0.0912
+Root mean squared error                  0.2224
+Relative absolute error                 44.4503 %
+Root relative squared error             69.5596 %
+Total Number of Instances             2485     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,673    0,031    0,714      0,673    0,693      0,659    0,954     0,773     course
+                 0,483    0,006    0,651      0,483    0,554      0,552    0,976     0,648     department
+                 0,648    0,050    0,672      0,648    0,660      0,607    0,931     0,722     faculty
+                 0,909    0,129    0,858      0,909    0,883      0,778    0,959     0,947     other
+                 0,352    0,019    0,569      0,352    0,434      0,417    0,895     0,497     project
+                 0,077    0,004    0,250      0,077    0,118      0,131    0,787     0,118     staff
+                 0,715    0,100    0,629      0,715    0,669      0,586    0,920     0,754     student
+Weighted Avg.    0,751    0,090    0,740      0,751    0,742      0,666    0,941     0,811     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  175    0    8   51    1    0   25 |    a = course
+    1   28    6    4    4    0   15 |    b = department
+   14    3  219   22   15    3   62 |    c = faculty
+   27    2   19 1043   16    1   40 |    d = other
+   13    3   20   31   58    3   37 |    e = project
+    2    0    6    5    1    3   22 |    f = staff
+   13    7   48   59    7    2  341 |    g = student
+
+
